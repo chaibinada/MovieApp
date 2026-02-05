@@ -258,3 +258,96 @@ justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding-top: 15px;
 }
+.ct {
+      position: relative;
+      top:-50px;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 ;
+      color: #fff;
+      background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),
+        url('https://m.media-amazon.com/images/I/81Yv6nHrU5L.png') center/cover no-repeat;
+    }
+    .contact-form {
+    background: white;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: green;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+.ab {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    height: 650px;
+    margin-top: -75px;
+}
+
+.about {
+    width: 70%;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding-top: 150px;
+}
+
+.about h1 {
+    color: #ff9800;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about strong {
+    color: #ff5722;
+}
+
+.emoji {
+    font-size: 28px;
+}

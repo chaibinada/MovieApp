@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReactStars from 'react-stars'
 import Add from './Add';
+import Hero from './Hero';
+import Foooter from './Foooter';
 
 const movielistStyle ={
   display:'flex',
@@ -23,6 +25,7 @@ function MovieList({movielist,setmovielist}) {
   
   return (
     <>
+    <Hero/>
     <div style={{background:'#e2d307', height:'100px',width:'100%',display:'flex',justifyContent:'center',alignItems:'center',position:'relative',top:'-50px'}}>
     <Row className="align-items-center">
         <Col xs="auto">
@@ -51,6 +54,7 @@ function MovieList({movielist,setmovielist}) {
     <div style={movielistStyle}>
       {movielist.filter((e)=>e.name.toLowerCase().includes(text.toLowerCase()) && e.rating >= rate).map((e)=><Carta e={e}/>)}
     </div>
+    <Foooter/>
     </>
   )
 }

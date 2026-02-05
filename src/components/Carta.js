@@ -1,9 +1,11 @@
 import React from 'react'
 import './Carta.css'
 import ReactStars from 'react-stars'
+import { Link } from 'react-router-dom'
 
 function Carta({e}) {
   return (
+    <Link to={`/trailer/${e.name}`} style={{textDecoration:'none',color:'white'}}>
     <div className="carta">
       <img src={e.posterurl} alt="Movie Poster" />
   <div className="info">
@@ -18,6 +20,7 @@ function Carta({e}) {
       color2={'#ffd700'} />
       </div>
 </div>
+</Link>
   )
 }
 

@@ -5,6 +5,10 @@ import NavB from './components/NavB';
 import MovieList from './components/MovieList'
 import Add from './components/Add';
 import Foooter from './components/Foooter';
+import About from './components/About';
+import Contact from './components/Contact';
+import { Route, Routes } from 'react-router-dom';
+import Trailer from './components/Trailer';
 
 function App() {
 
@@ -95,12 +99,20 @@ rating: 4,
 
   return (
     <div style={{position:'relative'}}>
-      {/* <Add  movielist={movielist} setmovielist={setmovielist} /> */}
+    
       <NavB/>
-      <Hero/> 
+          <Routes>
+    
+        <Route path="/" element={<MovieList movielist={movielist} setmovielist={setmovielist} />} />
+      <Route path="/about" element={<><About /></>} />
+        <Route path="/contact" element={<Contact/>} />
+         <Route path="/trailer/:name" element={<Trailer movielist={movielist}/> } />
+     
+      </Routes> 
+
+   
       
-      <MovieList movielist={movielist} setmovielist={setmovielist} /> 
-      <Foooter/>
+      
     </div>
   );
 }

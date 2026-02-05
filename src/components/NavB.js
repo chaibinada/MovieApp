@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReactStars from 'react-stars';
 import Carta from './Carta'
+import { Link } from 'react-router-dom';
 
 
 const movielistStyle ={
@@ -29,35 +30,16 @@ function NavB({ movielist})
     
    <Navbar bg="white" expand="lg" style={{
       display:'flex', justifyContent:'center', alignItems:'center', justifyContent:'space-evenly'}}>
-  {/* <Container fluid style={
-      display:'flex', justifyContent:'center', alignItems:'center'}}> */}
-    {/* <Navbar.Brand style={{
-      display:'flex', justifyContent:'center', alignItems:'center'}}>
-      
-    </Navbar.Brand> */}
+  
     <img
         style={{ width: '115px', height: '50px', marginBottom:'5px'}}
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsM-VoN0KHKg_9SC--kZujSufbZS31LJqtw&s"
         alt="logo"
       />
-    <Nav.Link style={{ color: 'rgb(190, 7, 7)', fontWeight: 'bold', fontSize:'17px' }}>
-          Movies List
-        </Nav.Link>
-        <Nav.Link style={{ color: 'rgb(4, 85, 22)', fontWeight: 'bold',fontSize:'17px' }}>Contact</Nav.Link>
-        <Nav.Link style={{ color: 'rgb(0, 110, 255)', fontWeight: 'bold',fontSize:'17px' }}>About</Nav.Link>
-    {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
-
-    {/* <Navbar.Collapse id="navbarScroll"> */}
-      
-      {/* <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-        <Nav.Link style={{ color: 'rgb(190, 7, 7)', fontWeight: 'bold' }}>
-          Movies List
-        </Nav.Link>
-        <Nav.Link style={{ color: 'rgb(4, 85, 22)' }}>Contact</Nav.Link>
-        <Nav.Link style={{ color: 'rgb(0, 110, 255)' }}>About</Nav.Link>
-      </Nav>
-    </Navbar.Collapse> */}
-  {/* </Container> */}
+        <Nav.Link style={{ color: 'rgb(190, 7, 7)', fontWeight: 'bold', fontSize:'17px' }}><Link to='/'style={{textDecoration:'none',color:'rgb(190, 7, 7)'}}>Movies List </Link> </Nav.Link>
+        <Nav.Link style={{ color: 'rgb(4, 85, 22)', fontWeight: 'bold',fontSize:'17px' }}><Link to='/contact'style={{textDecoration:'none',color:'rgb(4, 85, 22)'}}>Contact</Link></Nav.Link>
+        <Nav.Link style={{ color: 'rgb(0, 110, 255)', fontWeight: 'bold',fontSize:'17px' }}><Link to='/about' style={{textDecoration:'none',color:'rgb(0, 110, 255)'}}>About</Link></Nav.Link>
+    
 </Navbar>
 
   )
